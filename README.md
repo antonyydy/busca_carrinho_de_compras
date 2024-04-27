@@ -32,14 +32,13 @@ Produto adicionado ao carrinho!
 -------------------------------------------------
 5. Ao selecionar a opção de visualizar o carrinho, deve ser exibido para o usuário todos os produtos que ele já adicionou ao carrinho anteriormente com as informações de código do produto, nome, categoria e preço. Ao final da exibição de todos os elementos deve ser exibida a quantidade total de produtos e o preço total dos itens, como no exemplo abaixo:
 --------------------------------------------------------------
-Carrinho: <br>
-Código | Produto | Preço <br>
-PROD100005   Jaqueta Jeans Feminina   34.00 <br>
-PROD100025   Blusa Feminina   10.43 <br>
-PROD100035   Calça Jeans Feminina   56.00 <br>
-Quantidade de itens: 3 <br>
-Total do carrinho: 100.43
---------------------------------------------------
+Carrinho:
+Código | Produto | Preço  <br>
+PROD100005   Jaqueta Jeans Feminina   34.00  <br>
+PROD100025   Blusa Feminina   10.43  <br>
+PROD100035   Calça Jeans Feminina   56.00  <br>
+Quantidade de itens: 3  <br>
+Total do carrinho: 100.43  <br>
 6. Ao selecionar a opção de finalizar a compra, o carrinho deve ser exibido para o usuário e o programa deverá finalizar.
 
 Informações importantes:
