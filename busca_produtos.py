@@ -1,11 +1,10 @@
-# import locale
-# locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+import locale
+locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
-# def conversor_real():
-#     formatar_preco = locale.currency(grouping=True, symbol=False)
-#     return formatar_preco
+def conversor_real(valor):
+    return locale.currency(valor, grouping=True, symbol=None)
 
-opcao = (0)
+opcao = 0
 carrinho = []
 resultado_global = []
 
@@ -29,12 +28,13 @@ def busca_carrinho():
         categoria = categoria.lower()
 
         if busca in nome or busca in categoria or busca == codigo.lower():
-            resultados.append((codigo, nome, quantidade, categoria, preco))
+            resultados.append((codigo, nome, quantidade, categoria, float(preco)))
 
     resultados = resultados[:5]
 
     for produto in resultados:
-        print(f"{produto[0]} | {produto[1]} | {produto[3]} | R$ {produto[4]}")
+        preco_formatado = conversor_real(produto[4])
+        print(f"{produto[0]} | {produto[1]} | {produto[3]} | {preco_formatado}")
     
     return resultados
 
@@ -66,12 +66,13 @@ def visualizar_carrinho():
     quant = 0
     print("Código | Produto | Categoria | Preço")
     for prod in carrinho:
-        print(f"{prod[0]} | {prod[1]} | {prod[3]} | R$ {prod[4]}")
-        total = float(prod[4]) + total
-        quant = quant + 1
+        preco_formatado = conversor_real(prod[4])
+        print(f"{prod[0]} | {prod[1]} | {prod[3]} | {preco_formatado}")
+        total += prod[4]
+        quant += 1
           
     print(f"Quantidade de itens: {quant}") 
-    print(f"Total do carrinho: R$ {total}")
+    print(f"Total do carrinho: {conversor_real(total)}")
         
 
 def finalizar_compra():
@@ -80,7 +81,7 @@ def finalizar_compra():
 
 while opcao != 4:
   menu_carrinho()
-  opcao = int(input('Escolha uma opção '))
+  opcao = int(input('Escolha uma opção: '))
   if opcao == 1:
     print("===========================================")
     resultado_global = busca_carrinho()
@@ -96,15 +97,6 @@ while opcao != 4:
   else:
     print("Opção inválida. Por favor, escolha uma opção válida.")
     menu_carrinho()
-
-
-
-
-
-
-
-
-
 
 
 
