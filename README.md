@@ -18,9 +18,9 @@ Para ajudar a resolver o trabalho, seguem algumas orientações e passo a passos
 Digite sua chave de busca:
 > jeans
 Resultados:
-Código | Produto | Preço<br>
-PROD100005   Jaqueta Jeans Feminina   161.01<br>
-PROD100025   Jaqueta Jeans Feminina   80.34<br>
+Código | Produto | Preço <br>
+PROD100005   Jaqueta Jeans Feminina   161.01 <br>
+PROD100025   Jaqueta Jeans Feminina   80.34 <br>
 PROD100035   Jaqueta Jeans Feminina   92.32
 --------------------------------------------------
 3. Ao final de cada busca, o usuário deve poder escolher entre: Fazer uma nova busca; Adicionar item no carrinho; Visualizar os itens no carrinho; Finalizar a compra. Essas opções só podem ser exibidas ao usuário depois que ele tiver inserido pelo menos um item no carrinho, se não houver itens no carrinho, as únicas opções disponíveis devem ser: Fazer uma nova busca, Adicionar item no carrinho e Finalizar a compra.
@@ -32,13 +32,13 @@ Produto adicionado ao carrinho!
 -------------------------------------------------
 5. Ao selecionar a opção de visualizar o carrinho, deve ser exibido para o usuário todos os produtos que ele já adicionou ao carrinho anteriormente com as informações de código do produto, nome, categoria e preço. Ao final da exibição de todos os elementos deve ser exibida a quantidade total de produtos e o preço total dos itens, como no exemplo abaixo:
 --------------------------------------------------------------
-Carrinho:<br>
-Código | Produto | Preço<br>
-PROD100005   Jaqueta Jeans Feminina   34.00<br>
-PROD100025   Blusa Feminina   10.43<br>
-PROD100035   Calça Jeans Feminina   56.00<br>
-Quantidade de itens: 3<br>
-Total do carrinho: 100.43<br>
+Carrinho: <br>
+Código | Produto | Preço <br>
+PROD100005   Jaqueta Jeans Feminina   34.00 <br>
+PROD100025   Blusa Feminina   10.43 <br>
+PROD100035   Calça Jeans Feminina   56.00 <br>
+Quantidade de itens: 3 <br>
+Total do carrinho: 100.43
 --------------------------------------------------
 6. Ao selecionar a opção de finalizar a compra, o carrinho deve ser exibido para o usuário e o programa deverá finalizar.
 
@@ -46,7 +46,7 @@ Informações importantes:
 - O arquivo .csv não pode ser alterado em momento algum, o arquivo utilizada para a correção do trabalho será diferente deste, seguindo apenas o mesmo formato e estrutura.
 - O usuário pode adicionar o mesmo produto no carrinho mais de uma vez sem problemas, você podem exibir da forma que acharem melhor essa quantidade de produtos, podendo apenas repetir os itens na lista se quiserem.
 
-EXTRA: Na exibição para a tela, mostrar todos os valores no formato de reais "R$ 00,00"
+EXTRA: Na exibição para a tela, mostrar todos os valores no formato de reais "R$ 00,00"<br>
 EXTRA: Adicionar opção de remover do carrinho
   
   ## 🚀 Tecnologias
