@@ -40,7 +40,7 @@ def busca_carrinho():
 
 def menu_carrinho():
     print("===========================================")
-    print('Escolha uma opção:\n 1- Fazer nova busca. \n 2- Adicionar item no carrinho. \n 3- Visualizar os itens no carrinho. \n 4- Finalizar compra.')
+    print('Escolha uma opção:\n 1- Fazer nova busca. \n 2- Adicionar item no carrinho. \n 3- Visualizar os itens no carrinho. \n 4- Excluir item do carrinho. \n 5- Finalizar compra.')
 
 
 def adicionar_carrinho():
@@ -52,6 +52,14 @@ def adicionar_carrinho():
             carrinho.append(produto)
             print("Produto adicionado com sucesso!")
             
+
+def excluir_item_carrinho():
+    print("Qual produto deseja excluir (Digite o código): ")
+    codigo_excluir = input()
+    print("===========================================")
+    global carrinho
+    carrinho = [produto for produto in carrinho if produto[0] != codigo_excluir]
+    print("Produto excluído com sucesso!")
 
 def finalizar_compra():
     print("Carrinho:")
@@ -75,29 +83,26 @@ def visualizar_carrinho():
     print(f"Total do carrinho: {conversor_real(total)}")
         
 
-def finalizar_compra():
-    print("Compra finalizada. Obrigado por comprar conosco!")
-
-
-while opcao != 4:
-  menu_carrinho()
-  opcao = int(input('Escolha uma opção: '))
-  if opcao == 1:
-    print("===========================================")
-    resultado_global = busca_carrinho()
-  elif opcao == 2:
-    print("===========================================")
-    adicionar_carrinho()
-  elif opcao == 3:
-    print("===========================================")
-    visualizar_carrinho()
-  elif opcao == 4:
-    print("===========================================")
-    finalizar_compra()
-  else:
-    print("Opção inválida. Por favor, escolha uma opção válida.")
+while opcao != 5:
     menu_carrinho()
-
+    opcao = int(input('Escolha uma opção: '))
+    if opcao == 1:
+        print("===========================================")
+        resultado_global = busca_carrinho()
+    elif opcao == 2:
+        print("===========================================")
+        adicionar_carrinho()
+    elif opcao == 3:
+        print("===========================================")
+        visualizar_carrinho()
+    elif opcao == 4:
+        print("===========================================")
+        excluir_item_carrinho()
+    elif opcao == 5:
+        print("===========================================")
+        finalizar_compra()
+    else:
+        print("Opção inválida. Por favor, escolha uma opção válida.")
 
 
 
