@@ -32,7 +32,7 @@ Produto adicionado ao carrinho!
 -------------------------------------------------
 5. Ao selecionar a opção de visualizar o carrinho, deve ser exibido para o usuário todos os produtos que ele já adicionou ao carrinho anteriormente com as informações de código do produto, nome, categoria e preço. Ao final da exibição de todos os elementos deve ser exibida a quantidade total de produtos e o preço total dos itens, como no exemplo abaixo:
 --------------------------------------------------------------
-Carrinho:
+Carrinho: <br>
 Código | Produto | Preço  <br>
 PROD100005   Jaqueta Jeans Feminina   34.00  <br>
 PROD100025   Blusa Feminina   10.43  <br>
