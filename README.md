@@ -15,9 +15,9 @@ Para ajudar a resolver o trabalho, seguem algumas orientações e passo a passos
 1. Aqui, em anexo, existe um arquivo .CSV que deverá servir como base de dados para o seu programa. Isso quer dizer que as buscas realizadas pelo usuário devem sempre procurar as informações dos produtos nesse arquivo e exibir na tela de acordo com o que está registrado no arquivo. O formato que as informações serão exibidas na tela é indiferente, contanto que as informações sejam exatamente as mesmas do arquivo de base de dados e sempre seja exibido o código, nome e preço do produto.
 2. A primeira coisa a se fazer é implementar a busca, onde o usuário do seu programa poderá digitar na barra de busca o nome do produto OU o código do produto OU a categoria do produto. O resultado da busca deverá ser uma lista com no máximo 5 produtos correspondentes à busca do usuário, não tem problema se essa lista de correspondência tiver menos itens do que 5. Abaixo, um exemplo de como essa busca deve ser exibida para o usuário:
 ------------------------------------------------
-Digite sua chave de busca:
-> jeans
-Resultados:
+Digite sua chave de busca: <br>
+> jeans <br>
+Resultados: <br>
 Código | Produto | Preço <br>
 PROD100005   Jaqueta Jeans Feminina   161.01 <br>
 PROD100025   Jaqueta Jeans Feminina   80.34 <br>
@@ -39,6 +39,9 @@ PROD100025   Blusa Feminina   10.43  <br>
 PROD100035   Calça Jeans Feminina   56.00  <br>
 Quantidade de itens: 3  <br>
 Total do carrinho: 100.43  <br>
+
+--------------------------------------------------------------
+
 6. Ao selecionar a opção de finalizar a compra, o carrinho deve ser exibido para o usuário e o programa deverá finalizar.
 
 Informações importantes:
