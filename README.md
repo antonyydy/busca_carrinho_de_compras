@@ -56,4 +56,4 @@ EXTRA: Adicionar opção de remover do carrinho
   Esse projeto foi desenvolvido com as seguintes tecnologias:
   
   - Python 
-  - Git e Gith
+  - Git e Github
