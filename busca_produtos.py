@@ -34,7 +34,7 @@ def busca_carrinho():
 
     for produto in resultados:
         preco_formatado = conversor_real(produto[4])
-        print(f"{produto[0]} | {produto[1]} | {produto[3]} | {preco_formatado}")
+        print(f"{produto[0]} | {produto[1]} | {produto[3]} | R$ {preco_formatado}")
     
     return resultados
 
@@ -75,12 +75,12 @@ def visualizar_carrinho():
     print("Código | Produto | Categoria | Preço")
     for prod in carrinho:
         preco_formatado = conversor_real(prod[4])
-        print(f"{prod[0]} | {prod[1]} | {prod[3]} | {preco_formatado}")
+        print(f"{prod[0]} | {prod[1]} | {prod[3]} | R$ {preco_formatado}")
         total += prod[4]
         quant += 1
           
     print(f"Quantidade de itens: {quant}") 
-    print(f"Total do carrinho: {conversor_real(total)}")
+    print(f"Total do carrinho:  R$ {conversor_real(total)}")
         
 
 while opcao != 5:
